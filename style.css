@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 90%; /* wider than before */
+    max-width: 900px; /* allow very big screen to still limit */
+    margin: 40px auto;
+    background: #fff;
+    padding: 50px; /* more padding */
+    border-radius: 15px; /* even rounder */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 36px; /* bigger heading */
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 22px; /* bigger label text */
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 18px 30px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#restart {
+    background-color: #28a745;
+}
+
+#restart:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#step-indicator {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.step {
+    margin-bottom: 40px;
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    label, select, button, #step-indicator {
+        font-size: 20px;
+    }
+}
